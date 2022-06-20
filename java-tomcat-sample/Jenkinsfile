@@ -20,7 +20,7 @@ pipeline {
         }
         stage('deploy to prod') {
             steps {
-                echo "deploying our tomcat to tori black"
+                echo "deploying our tomcat to tori BLACK"
                 build job: 'deploy-to-prod'
             }
         }
