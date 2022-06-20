@@ -14,11 +14,13 @@ pipeline {
         }
         stage('deploy to stage') {
             steps {
+                echo "building our job in our local staging environment"
                 build job: 'deploy-to-tomcat'
             }
         }
         stage('deploy to prod') {
             steps {
+                echo "deploying our tomcat to prod environment"
                 build job: 'deploy-to-prod'
             }
         }
