@@ -20,7 +20,7 @@ pipeline {
         }
         stage('deploy to prod') {
             steps {
-                echo "deploying our tomcat to production environment"
+                echo "deploying our tomcat to prod environment"
                 build job: 'deploy-to-prod'
             }
         }
