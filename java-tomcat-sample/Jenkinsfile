@@ -1,5 +1,5 @@
 pipeline {
-    agent { label 'Linux' }
+    agent any
     stages {
         stage('Build Application') {
             steps {
@@ -20,7 +20,7 @@ pipeline {
         }
         stage('deploy to prod') {
             steps {
-                echo "deploying our tomcat to tori blacks big ass"
+                echo "deploying our tomcat to TORI BLACK BIG ANAL ASS"
                 build job: 'deploy-to-prod'
             }
         }
